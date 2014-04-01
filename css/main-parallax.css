@@ -1,0 +1,1305 @@
+@charset "UTF-8";
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+
+html {
+  line-height: 1;
+}
+
+
+ol, ul {
+  list-style: none;
+}
+
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+
+
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+
+a img {
+  border: none;
+}
+
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+
+
+@media all and (min-width: 701px) {
+  /* line 109, ../sass/_layout.scss */
+  #main.two-col #top-left, #main.two-col #main-content {
+    float: none;
+    width: 100%;
+  }
+  /* line 114, ../sass/_layout.scss */
+  #main.two-col #top-right, #main.two-col #right-sidebar-container {
+    float: none;
+    width: 100%;
+    padding-right: none;
+  }
+}
+/* ---------------------------------------------------------------------------------------------------- */
+/* 721: iPAD TABLETS (vertical) */
+/* ---------------------------------------------------------------------------------------------------- */
+@media all and (min-width: 721px) {
+  /* 2 to 1 column */
+  /* line 129, ../sass/_layout.scss */
+  .two-col-2-1 .left-col {
+    float: left;
+    width: 65%;
+  }
+  /* line 133, ../sass/_layout.scss */
+  .two-col-2-1 .right-col {
+    float: right;
+    width: 30%;
+  }
+
+  /* 1 to 2 column */
+  /* line 140, ../sass/_layout.scss */
+  .two-col-1-2 .left-col {
+    float: left;
+    width: 30%;
+  }
+  /* line 144, ../sass/_layout.scss */
+  .two-col-1-2 .right-col {
+    float: right;
+    width: 65%;
+  }
+
+  /* line 153, ../sass/_layout.scss */
+  #main.two-col #top-left, #main.two-col #main-content {
+    float: left;
+    width: 65%;
+  }
+  /* line 157, ../sass/_layout.scss */
+  #main.two-col #main-content {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  /* line 163, ../sass/_layout.scss */
+  #main.two-col #top-right, #main.two-col #right-sidebar-container {
+    float: right;
+    width: 26%;
+  }
+  /* line 168, ../sass/_layout.scss */
+  #main.two-col #top-right {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  /* line 173, ../sass/_layout.scss */
+  #main.two-col #main-content .twocol-details .blurb .content {
+    display: inline;
+  }
+}
+/* ---------------------------------------------------------------------------------------------------- */
+/* 881: DESKTOP */
+/* ---------------------------------------------------------------------------------------------------- */
+html {
+  color: white;
+  background: black;
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+body {
+  font-size: 16px;
+  font-size: 1rem;
+  font-family: "Futura", Helvetica, Arial, sans-serif;
+}
+
+.clear {
+  clear: both;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+
+.clearfix {
+  *zoom: 1;
+}
+
+.hidden,
+.off {
+  display: none;
+}
+
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
+}
+
+strong {
+  font-weight: bold;
+}
+
+img {
+  letter-spacing: normal;
+}
+
+
+area, map {
+  outline: none;
+}
+
+a {
+  outline: none;
+  color: white;
+  text-decoration: none;
+  -webkit-transition: 100ms linear;
+  -webkit-transition-delay: 0s;
+  -moz-transition: 100ms linear 0s;
+  -o-transition: 100ms linear 0s;
+  transition: 100ms linear 0s;
+}
+a:visited {
+  color: white;
+}
+a.nav-selected, a.nav-path-selected, a.active-color, a:active, a:hover {
+  color: #ffcc00;
+}
+a.active-color:hover {
+  color: white;
+}
+a.nav-selected {
+  cursor: default;
+}
+
+/* line 245, ../sass/global.scss */
+.grey-button {
+  display: inline-block;
+  font-size: 12px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  background: #1d1c1c;
+  background: -webkit-linear-gradient(175deg, #3c3a3b, #090808 25px);
+  background: -moz-linear-gradient(175deg, #3c3a3b, #090808 25px);
+  background: -o-linear-gradient(175deg, #3c3a3b, #090808 25px);
+  background: linear-gradient(175deg, #3c3a3b, #090808 25px);
+  background: -webkit-linear-gradient(-85deg, #3c3a3b, #090808 25px);
+  padding: 0 10px;
+  height: 22px;
+  line-height: 22px;
+  border-top: 1px solid #3a3839;
+  border-bottom: 3px solid #262323;
+  letter-spacing: .1em;
+}
+
+/* line 260, ../sass/global.scss */
+.grey-button.wide {
+  width: 100px;
+  text-align: center;
+}
+
+/* line 264, ../sass/global.scss */
+.disclaimer-text, .disclaimer-text a {
+  color: gray;
+  font-size: 12.8px;
+  font-size: 0.8rem;
+}
+
+/* line 268, ../sass/global.scss */
+.grey-callout {
+  background: #1a1a1a;
+  padding: 1em 2em;
+  margin-bottom: 1em;
+  display: inline-block;
+}
+
+/* line 274, ../sass/global.scss */
+a.yellow-text, .yellow-text {
+  color: #ffcc00;
+}
+
+/* line 275, ../sass/global.scss */
+a.grey-text, .grey-text {
+  color: gray;
+}
+
+/* line 276, ../sass/global.scss */
+.margin-bottom {
+  margin-bottom: 1em;
+}
+
+/* line 278, ../sass/global.scss */
+.date, .timestamp {
+  color: gray;
+  letter-spacing: 0;
+}
+
+/* line 283, ../sass/global.scss */
+.label {
+  text-transform: uppercase;
+}
+
+/* line 287, ../sass/global.scss */
+.right-details h2, .right-details h3, .right-details h4 {
+  margin-bottom: 1em;
+}
+
+/* line 289, ../sass/global.scss */
+.biography {
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 18px;
+  line-height: 1.125rem;
+}
+
+/* line 293, ../sass/global.scss */
+.bottom-border {
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  border-bottom: 1px solid #333333;
+}
+
+
+
+
+/* line 619, ../sass/main.scss */
+.grid-carousel {
+  position: relative;
+  overflow: hidden;
+  padding: 25px;
+}
+/* line 623, ../sass/main.scss */
+.grid-carousel ul.mm-grid-list {
+  display: none;
+}
+/* line 626, ../sass/main.scss */
+.no-js .grid-carousel ul.mm-grid-list, .grid-carousel ul.mm-grid-list.page-1 {
+  display: inline;
+}
+/* line 630, ../sass/main.scss */
+.grid-carousel a.control {
+  display: none;
+  position: absolute;
+  top: 40%;
+  width: 21px;
+  height: 37px;
+  text-indent: -9999em;
+  background-color: transparent;
+  background-image: url("../img/carousel_controls.png");
+  background-repeat: no-repeat;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+/* line 641, ../sass/main.scss */
+.grid-carousel a.control.next {
+  right: 5px;
+  background-position: right top;
+}
+/* line 644, ../sass/main.scss */
+.grid-carousel a.control.next:hover {
+  background-position: right bottom;
+}
+/* line 648, ../sass/main.scss */
+.grid-carousel a.control.prev {
+  left: 0;
+}
+/* line 650, ../sass/main.scss */
+.grid-carousel a.control.prev:hover {
+  background-position: left bottom;
+}
+
+
+
+
+
+/* line 2, ../sass/parallax/_default.scss */
+#fullscreen.home {
+  max-width: 100%;
+  min-width: 100%;
+  width: 100%;
+  margin-top: 40px;
+}
+/* line 7, ../sass/parallax/_default.scss */
+#fullscreen.home #page-header {
+  padding-bottom: 5px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  margin-top: 10px;
+}
+/* line 15, ../sass/parallax/_default.scss */
+#fullscreen.home footer {
+  background: #000;
+  position: fixed;
+  bottom: 0;
+  width: 96%;
+}
+/* line 22, ../sass/parallax/_default.scss */
+#fullscreen #main.home {
+  padding: 0;
+  margin: 0;
+}
+/* line 25, ../sass/parallax/_default.scss */
+#fullscreen #main.home #parallaxViewport {
+  width: 100%;
+  height: auto;
+  /*forcing content to GPU*/
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  /*flicker fix*/
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+/* line 34, ../sass/parallax/_default.scss */
+.no-js #parallaxViewport #bottle {
+  visibility: hidden;
+}
+/* line 37, ../sass/parallax/_default.scss */
+.no-js #parallaxViewport #loader {
+  visibility: hidden;
+}
+/* line 40, ../sass/parallax/_default.scss */
+.no-js #parallaxViewport h1.win {
+  opacity: 0;
+}
+
+/* line 45, ../sass/parallax/_default.scss */
+#parallaxViewport.landscape .athlete {
+  height: 100%;
+  width: auto;
+}
+
+/* line 49, ../sass/parallax/_default.scss */
+#parallaxViewport.portrait .athlete {
+  width: 100%;
+  height: auto;
+}
+
+/* line 53, ../sass/parallax/_default.scss */
+#parallaxViewport.portrait .card .athlete {
+  height: 100%;
+  width: auto;
+}
+
+/* line 58, ../sass/parallax/_default.scss */
+.js #parallaxViewport {
+  position: fixed;
+  top: 40px;
+  visibility: hidden;
+  /*forcing content to GPU*/
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  /*flicker fix*/
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+/* line 64, ../sass/parallax/_default.scss */
+.js #parallaxViewport #loader {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  z-index: 999;
+  position: relative;
+}
+/* line 72, ../sass/parallax/_default.scss */
+.js #parallaxViewport #loader img {
+  display: block;
+  width: auto;
+  height: 10%;
+  margin: 0 auto 0 auto;
+  position: relative;
+  top: 45%;
+}
+/* line 84, ../sass/parallax/_default.scss */
+.js #parallaxViewport #downArrow {
+  display: block;
+  width: 10%;
+  height: auto;
+  position: absolute;
+  z-index: 9999;
+}
+/* line 91, ../sass/parallax/_default.scss */
+.js #parallaxViewport #downArrow img {
+  width: 100%;
+  height: auto;
+}
+/* line 99, ../sass/parallax/_default.scss */
+.js #parallaxViewport h1 {
+  display: block;
+  z-index: 20;
+  position: absolute;
+  text-shadow: 0px 0px 5px white, 0px 0px 15px rgba(255, 255, 255, 0.5);
+  /*forcing content to GPU*/
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  /*flicker fix*/
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+/* line 108, ../sass/parallax/_default.scss */
+.js #parallaxViewport h1.strength {
+  opacity: 0;
+}
+/* line 112, ../sass/parallax/_default.scss */
+.js #parallaxViewport h1.win {
+  display: none;
+  opacity: 0;
+}
+/* line 117, ../sass/parallax/_default.scss */
+.js #parallaxViewport .bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  /*forcing content to GPU*/
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  /*flicker fix*/
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+/* line 127, ../sass/parallax/_default.scss */
+.js #parallaxViewport #bottle {
+  position: fixed;
+  bottom: 0;
+  right: 8%;
+  width: auto;
+  padding-right: 3%;
+  z-index: 19;
+}
+/* line 135, ../sass/parallax/_default.scss */
+.js #parallaxViewport #bottle img {
+  width: 80%;
+  float: left;
+  height: auto;
+  /*image-rendering: -moz-pixelated;*/
+  transform: rotate(0.0deg);
+}
+/* line 143, ../sass/parallax/_default.scss */
+.js #parallaxViewport #bottle span {
+  width: 20%;
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+  display: block;
+  font-size: 2em;
+  text-transform: uppercase;
+  /*writing-mode:bt-rl;*/
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  white-space: nowrap;
+}
+/* line 165, ../sass/parallax/_default.scss */
+.js #parallaxViewport .card {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 10;
+  /*forcing content to GPU*/
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  /*flicker fix*/
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+/* line 173, ../sass/parallax/_default.scss */
+.js #parallaxViewport .card span {
+  text-transform: uppercase;
+}
+/* line 178, ../sass/parallax/_default.scss */
+.js #parallaxViewport .card.seventh {
+  z-index: 100;
+}
+/* line 182, ../sass/parallax/_default.scss */
+.js #parallaxViewport .card .athlete {
+  display: block;
+  position: absolute;
+  z-index: 10;
+  /*forcing content to GPU*/
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  /*flicker fix*/
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: matrix(1, 0, 0, 1, 0, 3);
+  -moz-transform: matrix(1, 0, 0, 1, 0, 3);
+  -ms-transform: matrix(1, 0, 0, 1, 0, 3);
+  -o-transform: matrix(1, 0, 0, 1, 0, 3);
+  transform: matrix(1, 0, 0, 1, 0, 3);
+}
+/* line 190, ../sass/parallax/_default.scss */
+.js #parallaxViewport .card span.copy {
+  z-index: 5;
+  position: absolute;
+  opacity: 0;
+  white-space: nowrap;
+  /*forcing content to GPU*/
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  /*flicker fix*/
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+/* line 198, ../sass/parallax/_default.scss */
+.js #parallaxViewport .card .sweat {
+  display: block;
+  position: absolute;
+  z-index: 9;
+}
+/* line 207, ../sass/parallax/_default.scss */
+.js #parallaxViewport .card.first span.copy {
+  bottom: 30.5%;
+  left: 8%;
+  opacity: 0;
+}
+/* line 215, ../sass/parallax/_default.scss */
+.js #parallaxViewport .card.second .athlete {
+  right: -100%;
+}
+/* line 218, ../sass/parallax/_default.scss */
+.js #parallaxViewport .card.second span.copy {
+  bottom: 13.5%;
+  right: 20%;
+  opacity: 0;
+  opacity: 0;
+}
+/* line 227, ../sass/parallax/_default.scss */
+.js #parallaxViewport .card.third .sweat {
+  height: 120%;
+  width: auto;
+}
+/* line 233, ../sass/parallax/_default.scss */
+.js #parallaxViewport .card.fourth .sweat {
+  height: 50%;
+  width: auto;
+}
+/* line 238, ../sass/parallax/_default.scss */
+.js #parallaxViewport .card.sixth .sweat {
+  width: auto;
+  height: 100%;
+}
+/* line 244, ../sass/parallax/_default.scss */
+.js #parallaxViewport .card.seventh .carousel {
+  display: block;
+  width: 100%;
+  height: 480px;
+  margin: 0 auto;
+  position: absolute;
+  top: 100%;
+  z-index: 99999;
+  overflow: hidden;
+  padding-bottom: 50px;
+}
+/* line 254, ../sass/parallax/_default.scss */
+.js #parallaxViewport .card.seventh .carousel .ccm-block {
+  height: 100px;
+  position: relative;
+}
+/* line 257, ../sass/parallax/_default.scss */
+.js #parallaxViewport .card.seventh .carousel .ccm-block img {
+  float: right;
+  height: 100px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+/* line 265, ../sass/parallax/_default.scss */
+.js #parallaxViewport .card.seventh .carousel-next {
+  display: block;
+  width: 100px;
+  height: 100px;
+  background: #f00;
+  position: absolute;
+  right: 0;
+  top: 35%;
+}
+/* line 274, ../sass/parallax/_default.scss */
+.js #parallaxViewport .card.seventh .carousel-controls {
+  margin: 0 auto;
+  height: 20px;
+  text-align: center;
+}
+/* line 279, ../sass/parallax/_default.scss */
+.js #parallaxViewport .card.seventh .carousel-controls .control {
+  display: inline-block;
+  min-width: 10px;
+  height: 10px;
+  background: #222;
+  border-radius: 20px;
+  margin-left: 10px;
+  position: relative;
+  top: 3px;
+  cursor: pointer;
+}
+/* line 290, ../sass/parallax/_default.scss */
+.js #parallaxViewport .card.seventh .carousel-controls .control:hover {
+  background: #666;
+}
+/* line 293, ../sass/parallax/_default.scss */
+.js #parallaxViewport .card.seventh .carousel-controls .control.current {
+  background: #fff;
+}
+
+/* line 299, ../sass/parallax/_default.scss */
+.ie8.js #parallaxViewport .sweat {
+  display: none !important;
+}
+
+/* line 303, ../sass/parallax/_default.scss */
+.ie9.js #parallaxViewport h1 {
+  /*    filter:progid:DXImageTransform.Microsoft.Glow(Color=white,Strength=5); */
+}
+
+/* line 307, ../sass/parallax/_default.scss */
+.js #parallaxViewport .carousel ul {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  width: 9000px;
+}
+/* line 312, ../sass/parallax/_default.scss */
+.js #parallaxViewport .carousel ul li {
+  display: block;
+  float: left;
+  width: 853px;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+/* line 319, ../sass/parallax/_default.scss */
+.js #parallaxViewport .carousel ul li div {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+/* line 325, ../sass/parallax/_default.scss */
+.js #parallaxViewport .carousel ul li div section {
+  position: absolute;
+}
+/* line 326, ../sass/parallax/_default.scss */
+.js #parallaxViewport .carousel ul li div img {
+  float: right;
+}
+
+@media all and (min-width: 401px) {
+  /* line 757, ../sass/main.scss */
+  #page-header nav ul li, #page-header nav ul li.nav-recovery-grant {
+    width: 33%;
+  }
+
+  /* line 764, ../sass/main.scss */
+  aside ul.mm-grid-list li {
+    width: 50%;
+  }
+  /* line 769, ../sass/main.scss */
+  ul.mm-grid-list li.featured .section p, ul.mm-grid-list li.featured .section h2 {
+    margin-bottom: 10%;
+  }
+}
+
+@media all and (min-width: 581px) {
+  /* line 7, ../sass/protein-calculator/_tv.scss */
+  .protein-calc-has-results #protein-calc-container .inner #protein-calc-results .addthis_toolbox {
+    left: 80px;
+    bottom: 13px;
+  }
+
+  /* line 4, ../sass/parallax/_tv.scss */
+  #fullscreen.home #parallaxViewport .carousel ul li h2 {
+    font-size: 30px;
+    font-size: 1.875rem;
+  }
+
+  /* line 839, ../sass/main.scss */
+  html {
+    font-size: 14px;
+    font-size: 0.875rem;
+  }
+
+  /* line 840, ../sass/main.scss */
+  #main {
+    min-height: 600px;
+  }
+
+  /* line 842, ../sass/main.scss */
+  .callout-block h2,
+  h1 {
+    font-size: 30.88px;
+    font-size: 1.93rem;
+  }
+
+  /* line 843, ../sass/main.scss */
+  h2 {
+    font-size: 20.96px;
+    font-size: 1.31rem;
+  }
+
+  /* line 844, ../sass/main.scss */
+  h3 {
+    font-size: 20.96px;
+    font-size: 1.31rem;
+  }
+
+  /* line 845, ../sass/main.scss */
+  h4 {
+    font-size: 16px;
+    font-size: 1rem;
+  }
+
+  /* line 846, ../sass/main.scss */
+  h5 {
+    font-size: 13.76px;
+    font-size: 0.86rem;
+  }
+
+  /* line 847, ../sass/main.scss */
+  h6 {
+    font-size: 11.36px;
+    font-size: 0.71rem;
+  }
+
+  /* line 851, ../sass/main.scss */
+  aside ul.mm-grid-list li {
+    width: 33%;
+  }
+
+ 
+}
+@media all and (min-width: 701px) {
+ 
+  .callout-block h2,
+  h1 {
+    font-size: 30px;
+    font-size: 1.875rem;
+  }
+
+  /* line 920, ../sass/main.scss */
+  h2 {
+    font-size: 25px;
+    font-size: 1.5625rem;
+  }
+
+  /* line 921, ../sass/main.scss */
+  h3 {
+    font-size: 20px;
+    font-size: 1.25rem;
+  }
+
+  /* line 923, ../sass/main.scss */
+  #page-header div.menu-toggle {
+    left: 3%;
+  }
+  /* line 926, ../sass/main.scss */
+  #page-header div.search-icon {
+    right: 3%;
+  }
+  /* line 929, ../sass/main.scss */
+  #page-header nav ul li {
+    width: 16%;
+  }
+  /* line 931, ../sass/main.scss */
+  #page-header nav ul li.nav-recovery-grant {
+    width: 20%;
+  }
+
+  /* line 936, ../sass/main.scss */
+  #fullscreen {
+    min-width: 700px;
+  }
+
+  /* line 942, ../sass/main.scss */
+  ul.mm-grid-list li {
+    width: 25%;
+  }
+  /* line 944, ../sass/main.scss */
+  ul.mm-grid-list li.featured {
+    width: 75%;
+  }
+  /* line 949, ../sass/main.scss */
+  ul.mm-grid-list.athlete-list li.featured p, ul.mm-grid-list.athlete-list li.featured h2 {
+    margin-bottom: 8%;
+  }
+}
+@media all and (min-width: 721px) {
+  /* line 4, ../sass/parallax/_itv.scss */
+  #fullscreen.home #parallaxViewport .carousel ul li h2 {
+    font-size: 34px;
+    font-size: 2.125rem;
+  }
+
+  /* line 959, ../sass/main.scss */
+  footer section {
+    border: none;
+    padding-bottom: 4px;
+    display: inline;
+  }
+  /* line 964, ../sass/main.scss */
+  footer nav {
+    float: left;
+    width: 60%;
+    text-align: right;
+  }
+  /* line 968, ../sass/main.scss */
+  footer nav ul li a {
+    margin: 0 10px 0 5px;
+  }
+  /* line 970, ../sass/main.scss */
+  footer .social-links {
+    text-align: left;
+    width: 20%;
+    margin: 3px 0 0 3px;
+    display: inline;
+  }
+  /* line 976, ../sass/main.scss */
+  footer .social-links a {
+    margin: 0 3px;
+  }
+  /* line 979, ../sass/main.scss */
+  footer .social-links div {
+    display: inline;
+  }
+
+  /* line 982, ../sass/main.scss */
+  #right-sidebar-container .products {
+    text-align: center;
+  }
+
+  /* line 986, ../sass/main.scss */
+  article.protein-callout section {
+    position: absolute;
+    width: 45%;
+    top: 25%;
+  }
+  /* line 992, ../sass/main.scss */
+  .right-col article.protein-callout section, #right-sidebar-container article.protein-callout section {
+    position: relative;
+    width: auto;
+    top: auto;
+  }
+  /* line 998, ../sass/main.scss */
+  article.protein-callout figure img {
+    width: auto;
+  }
+  /* line 1000, ../sass/main.scss */
+  article.protein-callout.image-right section {
+    left: 8%;
+  }
+  /* line 1003, ../sass/main.scss */
+  article.protein-callout.image-right figure {
+    text-align: right;
+  }
+  /* line 1008, ../sass/main.scss */
+  article.protein-callout.image-left section {
+    right: 8%;
+  }
+  /* line 1011, ../sass/main.scss */
+  article.protein-callout.image-left figure {
+    text-align: left;
+  }
+
+  /* line 1017, ../sass/main.scss */
+  .product-category nav ul {
+    border-top: 1px solid #333333;
+  }
+  /* line 1019, ../sass/main.scss */
+  .product-category nav ul li {
+    border: none;
+    width: auto;
+    padding-right: 2em;
+  }
+  /* line 1023, ../sass/main.scss */
+  .product-category nav ul li.off {
+    display: inline-block;
+  }
+  /* line 1024, ../sass/main.scss */
+  .product-category nav ul li:last-child {
+    padding-right: 0;
+  }
+
+  /* line 1030, ../sass/main.scss */
+  .products .right-col .products {
+    text-align: center;
+  }
+  /* line 1033, ../sass/main.scss */
+  .products .right-col .products ul.mm-grid-list li {
+    width: 100%;
+  }
+
+  /* line 1041, ../sass/main.scss */
+  #youtube-channel .more .channel {
+    display: inline;
+  }
+  /* line 1042, ../sass/main.scss */
+  #youtube-channel .more i {
+    display: none;
+  }
+  /* line 1043, ../sass/main.scss */
+  #youtube-channel .videos {
+    clear: both;
+    width: 100%;
+    text-align: justify;
+    font-size: 0.1px;
+    /* IE 9/10 don't like font-size: 0; */
+  }
+  /* line 1048, ../sass/main.scss */
+  #youtube-channel .videos .video {
+    padding-top: 0px;
+    max-width: 30%;
+    display: inline-block;
+  }
+  /* line 1054, ../sass/main.scss */
+  #youtube-channel .videos:after {
+    content: '';
+    width: 100%;
+    /* Ensures there are at least 2 lines of text, so justification works */
+    display: inline-block;
+  }
+
+  /* line 1061, ../sass/main.scss */
+  .right-rail-nav li {
+    width: 100%;
+    float: none;
+  }
+
+  /* line 1064, ../sass/main.scss */
+  aside ul.mm-grid-list li {
+    width: 100%;
+  }
+}
+@media all and (min-width: 881px) {
+  /* line 1070, ../sass/main.scss */
+  #media-query-state {
+    z-index: 881;
+  }
+
+ 
+  /* line 135, ../sass/protein-calculator/_d.scss */
+  .product-suggestions-grid ul.mm-grid-list li {
+    width: 33%;
+  }
+
+  /* line 141, ../sass/protein-calculator/_d.scss */
+  .common-protein-sources {
+    width: 40%;
+    margin: 0;
+    padding: 0;
+    float: right;
+  }
+  /* line 146, ../sass/protein-calculator/_d.scss */
+  .common-protein-sources img {
+    width: 100%;
+  }
+
+  /* line 1072, ../sass/main.scss */
+  #main {
+    padding: 15px 1% 0 2.5%;
+    margin: 0 10px;
+  }
+
+  /* line 1076, ../sass/main.scss */
+  #fullscreen {
+    min-width: 880px;
+    max-width: 1024px;
+  }
+
+  /* line 1, ../sass/parallax/_desktop.scss */
+  #fullscreen.home {
+    max-width: 100%;
+    min-width: 100%;
+    width: 100%;
+    margin-top: 40px;
+  }
+  /* line 7, ../sass/parallax/_desktop.scss */
+  #fullscreen.home #page-header {
+    width: 100%;
+    margin: 10px auto 0;
+    display: block;
+  }
+  /* line 13, ../sass/parallax/_desktop.scss */
+  #fullscreen.home .card {
+    width: 100%;
+    height: 100%;
+  }
+  /* line 17, ../sass/parallax/_desktop.scss */
+  #fullscreen.home .card span.copy {
+    font-size: 37px;
+    text-transform: uppercase;
+  }
+  /* line 23, ../sass/parallax/_desktop.scss */
+  #fullscreen.home h1 {
+    font-size: 7.2em;
+    margin: 0 auto;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 40%;
+    z-index: 31;
+  }
+  /* line 34, ../sass/parallax/_desktop.scss */
+  #fullscreen.home #parallaxViewport .carousel ul li h2 {
+    font-size: 40px;
+    font-size: 2.5rem;
+  }
+
+  /* line 1086, ../sass/main.scss */
+  #page-header #header-image,
+  #page-header div.search-icon,
+  #page-header div.menu-toggle {
+    display: none;
+  }
+  /* line 1089, ../sass/main.scss */
+  #page-header #header-search {
+    top: 40px;
+  }
+  /* line 1092, ../sass/main.scss */
+  #page-header nav {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+  /* line 1096, ../sass/main.scss */
+  #page-header nav ul .open li {
+    border: none;
+  }
+  /* line 1099, ../sass/main.scss */
+  #page-header nav ul li {
+    display: block;
+    width: 12%;
+  }
+  /* line 1101, ../sass/main.scss */
+  .no-js #page-header nav ul li {
+    border: none;
+  }
+  /* line 1106, ../sass/main.scss */
+  #page-header nav ul li.nav-home, #page-header nav ul li.nav-search {
+    display: block;
+  }
+  /* line 1109, ../sass/main.scss */
+  #page-header nav ul li.nav-first {
+    display: none;
+  }
+  /* line 1112, ../sass/main.scss */
+  #page-header nav ul li.nav-recovery-grant {
+    width: 12%;
+    line-height: 14px;
+  }
+  /* line 1115, ../sass/main.scss */
+  #page-header nav ul li.nav-recovery-grant a {
+    display: inline-block;
+    margin-top: 7px;
+    width: 80px;
+  }
+  /* line 1121, ../sass/main.scss */
+  #page-header nav ul li.nav-home {
+    width: 24%;
+  }
+  /* line 1124, ../sass/main.scss */
+  #page-header nav ul li.nav-search {
+    width: 4%;
+  }
+
+  /* line 1132, ../sass/main.scss */
+  #fullscreen.home footer {
+    width: 96%;
+  }
+  /* line 1135, ../sass/main.scss */
+  #fullscreen.home footer #footer-wrap {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+  /* line 1140, ../sass/main.scss */
+  footer nav {
+    width: 60%;
+  }
+  /* line 1143, ../sass/main.scss */
+  footer nav ul li.copy {
+    padding-left: 7px;
+  }
+  /* line 1145, ../sass/main.scss */
+  footer nav .off {
+    display: inline;
+  }
+  /* line 1146, ../sass/main.scss */
+  footer nav .on {
+    display: none;
+  }
+  /* line 1149, ../sass/main.scss */
+  footer header a.brand-link .off {
+    display: inline;
+  }
+  /* line 1151, ../sass/main.scss */
+  footer .social-links {
+    width: 16%;
+  }
+  /* line 1155, ../sass/main.scss */
+  footer #country-list {
+    right: 186px;
+  }
+
+  /* line 1162, ../sass/main.scss */
+  ul.mm-grid-list li {
+    width: 20%;
+  }
+  /* line 1164, ../sass/main.scss */
+  ul.mm-grid-list li .inner {
+    padding: 15px;
+  }
+  /* line 1166, ../sass/main.scss */
+  .grid-carousel ul.mm-grid-list li .inner {
+    padding: 10px;
+  }
+  /* line 1170, ../sass/main.scss */
+  ul.mm-grid-list li.featured {
+    width: 60%;
+  }
+  /* line 1176, ../sass/main.scss */
+  ul.mm-grid-list.product-category li div.inner {
+    padding: 0;
+  }
+  /* line 1180, ../sass/main.scss */
+  #main.two-col #main-content ul.mm-grid-list li {
+    width: 33%;
+  }
+  /* line 1186, ../sass/main.scss */
+  .product-packages ul li {
+    width: 33%;
+  }
+
+  /* line 1190, ../sass/main.scss */
+  .product-category #page-title .header-link {
+    width: auto;
+    margin-top: 0;
+  }
+  /* line 1191, ../sass/main.scss */
+  .product-category nav {
+    float: right;
+  }
+  /* line 1193, ../sass/main.scss */
+  .product-category nav ul {
+    border: none;
+  }
+  /* line 1195, ../sass/main.scss */
+  .product-category nav ul li {
+    padding-right: 1.25em;
+    height: auto;
+    line-height: 30.56px;
+    line-height: 1.91rem;
+  }
+
+  /* line 1204, ../sass/main.scss */
+  #tabsblock .ui-tabs-nav {
+    display: block;
+  }
+  /* line 1205, ../sass/main.scss */
+  #tabsblock .accordion-trigger {
+    display: none;
+  }
+  /* line 1208, ../sass/main.scss */
+  #tabsblock .off {
+    display: block;
+  }
+
+  /* line 1211, ../sass/main.scss */
+  .products .buy-now-link {
+    display: none;
+  }
+
+  /* line 1215, ../sass/main.scss */
+  .grid-carousel a.control {
+    display: inline-block;
+  }
+}

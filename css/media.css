@@ -1,0 +1,302 @@
+
+/*--------------------------------------------------------
+MEDIA QUERIES
+--------------------------------------------------------*/
+@media only screen and (min-width: 0px) and (max-width: 320px) {
+	#intro h1 { font-size: 40px !important; letter-spacing: -1px !important;}
+	h1 { font-size:80px !important;letter-spacing: -1px;}
+	h1#sinceCountdown{ text-shadow:none; font-size:100% !important;}
+	h1#fittext1 {text-align:center;}
+	h1#fittext2 {text-align:center; width:100% ; float:none;}
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-width : 320px)
+and (max-width : 480px) {
+		h1 {
+			font-size: 80px!important;
+			letter-spacing: -1px;
+		}
+		
+		h1#fittext1 {
+			text-align: center;
+			font-size: 60px!important;
+			white-space: normal!important;
+			line-height: normal!important;
+			letter-spacing: -1px;
+			margin-top: -40px!important;
+			padding-bottom: 0!important;
+			margin-bottom: 0!important;
+		}
+		
+		h1#sinceCountdown {
+			text-shadow: none;
+			font-size: 60px!important;
+		}
+		
+		h1#fittext2 {
+			text-align: center;
+			width: 100%;
+			float: none;
+			font-size: 30px!important;
+		}
+		
+		img.odd, 
+		img.even {
+			position: static!important;
+			-webkit-transform: translate(0px,0px)!important;
+			-moz-transform:  translate(0px,0px)!important;
+			-o-transform:  translate(0px,0px)!important;
+			-ms-transform:  translate(0px,0px)!important;
+			transform:  translate(0px,0px)!important;
+			-webkit-opacity: 1!important;
+			-moz-opacity: 1!important;
+			-khtml-opacity: 1!important;
+			opacity: 1!important;
+		}
+		
+		
+		.overview {
+			opacity: 1 !important;
+		}
+		
+		h1#fittext3 {
+			text-align: center;
+			width: 100%;
+			float: none;
+			font-size: 40px!important;
+			etter-spacing: -1px!important;
+			margin-bottom: 0!important;
+			padding: 0!important;
+		}
+		
+		footer {
+			padding-top: 7px!important;
+			height: auto!important;
+			position: static!important;
+		}
+		
+		.testtitle {
+			font-size: 20px!important;
+			color: #27355d!important;
+			padding: 0!important;
+		}
+		
+		.last-item {
+			padding-bottom: 4px!important;
+			height: auto!important;
+			margin-bottom: 20px!important;
+		}
+		
+		.testtextblock {
+			font-size: 1rem;
+			width: 100%!important;
+			margin-right: 0!important;
+			margin-left: 0!important;
+			text-align: left!important;
+		}
+		
+		.slideLeft {
+			position: absolute;
+			right: 10px!important;
+		}
+		
+		#sydney,a.nivo-nextNav,a.nivo-prevNav,.testimg,.testtitle2,.flex-direction-nav {
+			display: none!important;
+		}
+		#Other-Projects { display:none}
+		
+		#mainContainer { overflow-x: hidden !important;}
+		.testtext { color:#FFF;}
+
+		}
+
+
+    
+/* Samsung Galaxy S4 */    
+
+@media only screen and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+
+		#intro {
+			
+		}
+		
+		h1#fittext1 {
+			font-size: 80px !important;
+			line-height: 80px !important;
+			text-align: center !important;
+			white-space: normal !important;
+			padding-top: 50px !important;
+		}
+		
+		h1#fittext2 {
+			font-size: 50px !important;
+			text-align: center !important;
+			width: 100% !important;
+			float: none;
+		}
+		
+		h1#sinceCountdown {
+			text-shadow: none;
+			font-size: 80px !important;
+		}
+		img.odd, 
+		img.even,
+		img.big-logo,
+		h1.header,
+		.overview {
+			position: static!important;
+			-webkit-transform: translate(0px,0px)!important;
+			-moz-transform:  translate(0px,0px)!important;
+			-o-transform:  translate(0px,0px)!important;
+			-ms-transform:  translate(0px,0px)!important;
+			transform:  translate(0px,0px)!important;
+			-webkit-opacity: 1!important;
+			-moz-opacity: 1!important;
+			-khtml-opacity: 1!important;
+			opacity: 1!important;
+		}
+		
+		.contribution-cut,.contribution-cut.medium {
+			position: static!important;
+			-webkit-opacity: 1!important;
+		}
+		
+		.overview {
+			opacity: 1 !important;
+		}
+		
+
+}
+@media only screen and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+h1#fittext1 {text-align:center !important;}
+h1#sinceCountdown{ text-shadow:none;font-size: 80px !important;}
+h1#fittext2 { font-size:37px !important;letter-spacing: -1px !important;text-align:center !important; width:100% !important; float:none;}
+#Other-Projects { display:none}
+
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen
+and (min-width : 321px) {
+#intro {padding-top:10%;}	
+
+}
+
+ 
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (max-width : 320px) {
+#intro {padding-top:30%;}	
+#Other-Projects { display:none}
+
+	
+}
+ 
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-width : 768px)
+and (max-width : 1024px) {
+#intro h1 { letter-spacing: -1px;}
+#fittext1 { font-size: 120px }
+#fittext2 { font-size: 90px}
+p.copyright { font-size:12px; vertical-align:-10px;}
+#sinceCountdown:after{right:10% !important;} 
+/*.loading object { display:none !important}*/
+}
+ 
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-width : 768px)
+and (max-width : 1024px)
+and (orientation : landscape) {
+	#intro {padding-top:10%;}	
+    #fittext1 { font-size: 160px;-webkit-transition: all 0.4s ease;}
+	#fittext2 { font-size: 100px;-webkit-transition: all 0.4s ease;}
+	footer .skype , footer .linkedin, footer .google, footer .email {font-size: 200%;}
+	p.header {font-size: 18px !important;}
+	img.odd, 
+	img.even,
+	img.big-logo,
+	h1.header,
+	.overview {
+			position: static!important;
+			-webkit-transform: translate(0px,0px)!important;
+			-moz-transform:  translate(0px,0px)!important;
+			-o-transform:  translate(0px,0px)!important;
+			-ms-transform:  translate(0px,0px)!important;
+			transform:  translate(0px,0px)!important;
+			-webkit-opacity: 1!important;
+			-moz-opacity: 1!important;
+			-khtml-opacity: 1!important;
+			opacity: 1!important;
+		}
+	#baccarat-info { display:none}
+	.flex-direction-nav .flex-next {display:none}
+    .flex-direction-nav .flex-prev {display:none}
+     h1#fittext3 { font-size:230px !important}
+}
+ 
+/* iPads (portrait) ----------- */
+@media only screen
+and (min-width : 768px)
+and (max-width : 1024px)
+and (orientation : portrait) {
+	#fittext1 { font-size: 120px;-webkit-transition: all 0.4s ease;}
+	#fittext2 { font-size: 110px;-webkit-transition: all 0.4s ease;}
+	h1 { font-size:70px}
+	h1.shadow {font-size:80px}
+	img.odd, 
+	img.even,
+	img.big-logo,
+	h1.header,
+	.overview {
+			position: static!important;
+			-webkit-transform: translate(0px,0px)!important;
+			-moz-transform:  translate(0px,0px)!important;
+			-o-transform:  translate(0px,0px)!important;
+			-ms-transform:  translate(0px,0px)!important;
+			transform:  translate(0px,0px)!important;
+			-webkit-opacity: 1!important;
+			-moz-opacity: 1!important;
+			-khtml-opacity: 1!important;
+			opacity: 1!important;
+		}
+	#baccarat-info { display:none}
+	#Other-Projects { display:none}
+
+}
+ 
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1224px) {
+#intro {padding-top:5% !important;}
+}
+ 
+/* Large screens ----------- */
+@media only screen
+and (min-width : 1824px) {
+#intro {padding-top:4% !important;}	
+}
+ 
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+p, .copyright, li {
+	font-weight: 300 !important
+}
+h1.header {
+	opacity: 1
+}
+}
+
+@media only screen
+and (min-width : 1200px)
+and (max-width : 1320px) {
+
+#sinceCountdown:after
+{
+
+	right:10% !important;
+} 
+}

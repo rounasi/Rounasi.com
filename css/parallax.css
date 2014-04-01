@@ -1,0 +1,393 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body.home {
+  overflow: hidden;  
+}
+
+.sweat {
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  z-index: 1 !important; }
+
+.no-touch #parallaxViewport #downArrow:hover {
+  background: url("../img/parallax/scrollDown_2_Rollover.png") 0 0 no-repeat; }
+.no-touch #parallaxViewport #downArrow.start:hover {
+  background: url("../img/scrollDown_2_Start_Rollover.png") 0 0 no-repeat; }
+.no-touch #parallaxViewport #leftArrow:hover {
+  background: url("../img/SwipeLeftRight_2_Left_Rollover.png") 0 0 no-repeat; }
+.no-touch #parallaxViewport #rightArrow:hover {
+  background: url("../img/SwipeLeftRight_2_Right_Rollover.png") 0 0 no-repeat; }
+
+.js #parallaxViewport {
+  overflow: hidden; }
+  .js #parallaxViewport .bg {
+    visibility: visible;
+    display: none; }
+    @media (max-width: 767px) {
+      .js #parallaxViewport .bg {
+        width: auto;
+        height: auto;
+        left: 50%;
+        margin-left: -505px;
+        margin-top: -10%; } }
+  .js #parallaxViewport.preload {
+    height: 100% !important; }
+  .js #parallaxViewport #loader {
+    visibility: visible !important; }
+  .js #parallaxViewport #downArrow {
+    visibility: visible !important;
+    width: 45px;
+    height: 48px;
+    bottom: -48px;
+    left: 50%;
+    margin-left: -23px;
+    opacity: 0;
+    cursor: pointer;
+    background: url("../img/scrollDown_2_Active.png") 0 0 no-repeat; }
+    .js #parallaxViewport #downArrow.start {
+      background: url("../img/scrollDown_2_Start_Active.png") 0 0 no-repeat; }
+  .js #parallaxViewport #leftArrow {
+    position: absolute;
+    visibility: visible !important;
+    width: 39px;
+    height: 42px;
+    top: 50%;
+    margin-top: -21px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 999999;
+    left: -39px;
+    background: url("../img/SwipeLeftRight_2_Left_Active.png") 0 0 no-repeat; }
+  .js #parallaxViewport #rightArrow {
+    position: absolute;
+    visibility: visible !important;
+    width: 39px;
+    height: 42px;
+    top: 50%;
+    margin-top: -21px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 999999;
+    right: -39px;
+    background: url("../img/SwipeLeftRight_2_Right_Active.png") 0 0 no-repeat; }
+  .js #parallaxViewport #headlines {
+    position: absolute;
+    width: 100% !important;
+    top: 35%; }
+    @media (max-width: 767px) {
+      .js #parallaxViewport #headlines {
+        top: 30%; } }
+    @media (max-height: 400px) {
+      .js #parallaxViewport #headlines {
+        top: 20%; } }
+    @media (min-width: 768px) and (max-height: 480px) {
+      .js #parallaxViewport #headlines {
+        top: 15%; } }
+    @media (min-width: 768px) and (max-height: 380px) {
+      .js #parallaxViewport #headlines {
+        top: 5%; } }
+  .js #parallaxViewport h1.strength {
+    position: relative;
+    opacity: 0;
+    visibility: visible !important;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-transform: scale(0.85, 0.85);
+    -moz-transform: scale(0.85, 0.85);
+    -o-transform: scale(0.85, 0.85);
+    -ms-transform: scale(0.85, 0.85);
+    transform: scale(0.85, 0.85);
+    top: auto;
+    bottom: auto;
+    font-size: 7.2em;
+    line-height: 1.2;
+    text-align: center !important;
+    width: 100% !important; }
+    @media (min-width: 1024px) and (max-width: 1279px) {
+      .js #parallaxViewport h1.strength {
+        font-size: 6em;
+        line-height: 1.2; } }
+    @media (min-width: 768px) and (max-width: 1023px) {
+      .js #parallaxViewport h1.strength {
+        font-size: 4.5em;
+        line-height: 1.2; } }
+    @media (max-width: 767px) {
+      .js #parallaxViewport h1.strength {
+        font-size: 3em;
+        line-height: 1.2; } }
+    @media (max-width: 480px) {
+      .js #parallaxViewport h1.strength {
+        font-size: 2em;
+        line-height: 1.2; } }
+    @media (min-width: 768px) and (max-height: 380px) {
+      .js #parallaxViewport h1.strength {
+        font-size: 5em;
+        line-height: 1.2; } }
+  .js #parallaxViewport h1.win {
+    position: relative;
+    display: block;
+    opacity: 0;
+    visibility: visible !important;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-transform: scale(0.85, 0.85);
+    -moz-transform: scale(0.85, 0.85);
+    -o-transform: scale(0.85, 0.85);
+    -ms-transform: scale(0.85, 0.85);
+    transform: scale(0.85, 0.85);
+    top: auto;
+    bottom: auto;
+    font-size: 3em;
+    line-height: 1.2;
+    text-align: center !important;
+    width: 100% !important; }
+    @media (min-width: 1024px) and (max-width: 1279px) {
+      .js #parallaxViewport h1.win {
+        font-size: 2.5em;
+        line-height: 1.2; } }
+    @media (min-width: 768px) and (max-width: 1023px) {
+      .js #parallaxViewport h1.win {
+        font-size: 2em;
+        line-height: 1.2; } }
+    @media (max-width: 767px) {
+      .js #parallaxViewport h1.win {
+        font-size: 1.5em;
+        line-height: 1.2; } }
+  .js #parallaxViewport #bottle {
+    right: 0;
+    visibility: visible;
+    bottom: -100%;
+    position: absolute; }
+  .js #parallaxViewport .card {
+    visibility: visible; }
+    @media (max-width: 767px), (max-height: 480px) {
+      .js #parallaxViewport .card span.copy {
+        bottom: auto;
+        top: 62% !important;
+        width: 100%;
+        text-align: center;
+        z-index: 20;
+        text-shadow: black 0 0 10px;
+        left: 0 !important;
+        right: 0 !important;
+        font-size: 15px !important; } }
+    @media (min-width: 768px) and (max-width: 959px) {
+      .js #parallaxViewport .card span.copy {
+        font-size: 25px !important; } }
+    @media (min-width: 960px) {
+      .js #parallaxViewport .card span.copy {
+        font-size: 37px !important; } }
+    .js #parallaxViewport .card .athlete {
+      visibility: hidden; }
+    .js #parallaxViewport .card.first .athlete {
+      left: 100%;
+      bottom: -17%;
+      height: 100%; }
+    .js #parallaxViewport .card.first span.copy {
+      bottom: 33%;
+      left: -100%;
+      right: auto; }
+      @media (min-width: 768px) and (max-height: 768px) {
+        .js #parallaxViewport .card.first span.copy {
+          bottom: 22%; } }
+      @media (min-width: 768px) and (max-height: 520px) {
+        .js #parallaxViewport .card.first span.copy {
+          bottom: 19%; } }
+    .js #parallaxViewport .card.second .athlete {
+      right: -100%;
+      left: auto;
+      bottom: 0;
+      height: 100%; }
+    .js #parallaxViewport .card.second span.copy {
+      bottom: 18%; }
+      @media (max-width: 320px) {
+        .js #parallaxViewport .card.second span.copy {
+          z-index: 20;
+          text-shadow: black 0 0 10px; } }
+    .js #parallaxViewport .card.third .athlete {
+      right: -100%;
+      left: auto;
+      top: 7%;
+      height: 80%; }
+    .js #parallaxViewport .card.third .sweat {
+      left: auto;
+      top: 5%;
+      opacity: 0;
+      z-index: 25 !important;
+      height: 90% !important;
+      -webkit-transform: rotate(-10deg);
+      -moz-transform: rotate(-10deg);
+      -ms-transform: rotate(-10deg);
+      -o-transform: rotate(-10deg);
+      transform: rotate(-10deg);
+      -webkit-transform-origin: 72% 36%;
+      -moz-transform-origin: 72% 36%;
+      -ms-transform-origin: 72% 36%;
+      -o-transform-origin: 72% 36%;
+      transform-origin: 72% 36%; }
+    .js #parallaxViewport .card.third span.copy {
+      bottom: auto; }
+      @media (max-width: 320px) {
+        .js #parallaxViewport .card.third span.copy {
+          z-index: 20;
+          text-shadow: black 0 0 10px; } }
+    .js #parallaxViewport .card.fourth .athlete {
+      right: auto;
+      left: auto;
+      height: 110%;
+      top: -5%; }
+    .js #parallaxViewport .card.fourth .sweat {
+      left: auto;
+      right: auto;
+      opacity: 0; }
+    .js #parallaxViewport .card.fourth #sweat1 {
+      top: 44%; }
+    .js #parallaxViewport .card.fourth #sweat2 {
+      top: 10%; }
+    .js #parallaxViewport .card.fourth span.copy {
+      bottom: 63%; }
+      @media (max-width: 380px) {
+        .js #parallaxViewport .card.fourth span.copy {
+          bottom: 80%; } }
+      @media (min-width: 1150px) and (max-height: 625px) {
+        .js #parallaxViewport .card.fourth span.copy {
+          bottom: 70% !important; } }
+    .js #parallaxViewport .card.fifth .athlete {
+      right: auto;
+      left: 100%;
+      bottom: 0;
+      height: 100%; }
+    @media (max-width: 320px) {
+      .js #parallaxViewport .card.fifth span.copy {
+        z-index: 20;
+        text-shadow: black 0 0 10px; } }
+    .js #parallaxViewport .card.sixth .athlete {
+      right: auto;
+      left: 100%;
+      bottom: 0;
+      height: 100%;
+      -webkit-transform: matrix(1, 0, 0, 1, 0, 3);
+      -moz-transform: matrix(1, 0, 0, 1, 0, 3);
+      -ms-transform: matrix(1, 0, 0, 1, 0, 3);
+      -o-transform: matrix(1, 0, 0, 1, 0, 3);
+      transform: matrix(1, 0, 0, 1, 0, 3); }
+      @media (max-width: 880px) {
+        .js #parallaxViewport .card.sixth .athlete {
+          height: 95%; } }
+    .js #parallaxViewport .card.sixth .sweat {
+      left: 100%; }
+    @media (max-width: 480px) {
+      .js #parallaxViewport .card.sixth span.copy {
+        z-index: 20;
+        text-shadow: black 0 0 10px; } }
+    .js #parallaxViewport .card.seventh .carousel {
+      opacity: 0;
+      top: 200%;
+      left: 50%;
+      margin: -240px 0 0 -427px;
+      width: 853px;
+      overflow: visible; }
+      @media (max-height: 480px) {
+        .js #parallaxViewport .card.seventh .carousel {
+          height: 100%; } }
+      .js #parallaxViewport .card.seventh .carousel ul {
+        overflow: visible; }
+        .js #parallaxViewport .card.seventh .carousel ul li {
+          position: absolute;
+          top: 0;
+          left: 100%; }
+        .js #parallaxViewport .card.seventh .carousel ul li[data-position="0"],
+        .js #parallaxViewport .card.seventh .carousel ul li[data-position="1"],
+        .js #parallaxViewport .card.seventh .carousel ul li[data-position="2"] {
+          overflow: visible; }
+          @media (max-height: 480px) {
+            .js #parallaxViewport .card.seventh .carousel ul li[data-position="0"],
+            .js #parallaxViewport .card.seventh .carousel ul li[data-position="1"],
+            .js #parallaxViewport .card.seventh .carousel ul li[data-position="2"] {
+              overflow-y: scroll;
+              -webkit-overflow-scrolling: touch;
+              height: 100%; } }
+      @media (min-width: 853px) and (max-width: 960px) {
+        .js #parallaxViewport .card.seventh .carousel h2 {
+          margin-left: 60px; }
+        .js #parallaxViewport .card.seventh .carousel p {
+          margin-left: 60px; } }
+      @media (max-width: 853px) {
+        .js #parallaxViewport .card.seventh .carousel {
+          margin: 0;
+          left: 0; }
+          .js #parallaxViewport .card.seventh .carousel h2 {
+            margin-left: 60px;
+            margin-right: 60px; }
+          .js #parallaxViewport .card.seventh .carousel p {
+            margin-left: 60px;
+            margin-right: 60px; }
+          .js #parallaxViewport .card.seventh .carousel img {
+            max-width: 100%; } }
+          @media (max-width: 853px) and (max-width: 480px) {
+            .js #parallaxViewport .card.seventh .carousel img {
+              max-width: 50%;
+              height: auto; } }
+      @media (max-height: 480px) {
+        .js #parallaxViewport .card.seventh .carousel .item-1 {
+          padding-bottom: 250px; } }
+      .js #parallaxViewport .card.seventh .carousel .item-1 section {
+        width: 60%; }
+        @media (max-width: 853px) {
+          .js #parallaxViewport .card.seventh .carousel .item-1 section {
+            width: 100%;
+            position: relative; } }
+      @media (max-width: 853px) {
+        .js #parallaxViewport .card.seventh .carousel .item-1 img {
+          float: none;
+          margin: 0 auto;
+          display: block; } }
+      @media (max-height: 480px) {
+        .js #parallaxViewport .card.seventh .carousel .item-2 {
+          padding-bottom: 250px; } }
+      .js #parallaxViewport .card.seventh .carousel .item-2 section {
+        width: 45%; }
+        @media (max-width: 853px) {
+          .js #parallaxViewport .card.seventh .carousel .item-2 section {
+            width: 100%;
+            position: relative; } }
+      @media (max-width: 853px) {
+        .js #parallaxViewport .card.seventh .carousel .item-2 img {
+          float: none;
+          margin: 0 auto;
+          display: block; } }
+      @media (max-height: 480px) {
+        .js #parallaxViewport .card.seventh .carousel .item-3 {
+          padding-bottom: 250px; } }
+      .js #parallaxViewport .card.seventh .carousel .item-3 section {
+        width: 55%; }
+        @media (max-width: 853px) {
+          .js #parallaxViewport .card.seventh .carousel .item-3 section {
+            width: 100%;
+            position: relative; } }
+      @media (max-width: 853px) {
+        .js #parallaxViewport .card.seventh .carousel .item-3 img {
+          float: none;
+          margin: 0 auto;
+          display: block;
+          max-height: 300px; } }
+        @media (max-width: 853px) and (max-height: 480px) {
+          .js #parallaxViewport .card.seventh .carousel .item-3 img {
+            height: auto !important; } }

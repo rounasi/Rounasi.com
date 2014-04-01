@@ -1,0 +1,135 @@
+/* testimonial block */
+
+.testimonial{
+	
+	display: block;  background:none; 
+	position: relative; z-index:1;
+	
+	
+}
+
+.testimonial h1 {
+	text-align: center;
+	color: #28365c;
+	padding: 0;
+	margin: 0;
+	letter-spacing: 0.002em;
+}
+
+.testimg{
+	width:150px;
+	height:150px;
+	margin:0 auto;
+	clear:both !important;
+	-webkit-border-radius: 500px;
+-moz-border-radius: 500px;
+border-radius: 500px;
+box-shadow: 0px 0px 0px 10px #4D88FF;
+
+	
+}
+
+.testtext{
+	margin-top:0px;
+}
+
+.testtitle{
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 110%;
+	font-weight: 300;
+	margin:0;
+	color:#FFF !important;
+}
+h4 {
+	padding: 10px 0 5px !important
+}
+.testtitle2{
+	padding-left: 10px;
+	color:#27355D;
+}
+.testtitle2:before{
+	content:"●";
+	font-size: 60%;
+	padding-right:5px;
+}
+
+.testtextblock{
+	text-align: center;
+	font-size: 10px;
+	font-size: 1.0rem;
+	font-weight: 400;
+	color: #1b3057;
+	font-family: 'Indie Flower', cursive;
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+		
+
+	
+}
+
+.testblock{
+	position:relative;
+	top:80px;
+}
+
+.img-circle{ 
+
+}
+.flexslider .slides img{
+	/*behavior: url(css/PIE.htc);*/
+}
+
+css3-container{
+	z-index:1 !important;
+}
+
+/* end testimonial block */
+
+.flex-direction-nav a {width: 35px; height: 52px; margin: -20px 0 0; display: block; background: url(../img/mediumarrows.png) no-repeat 0 0; position: absolute; top: 50%; z-index: 10; cursor: pointer; text-indent: -9999px; opacity: 0; -webkit-transition: all .3s ease;}
+.flex-direction-nav .flex-next {background-position: -56px 0; right: -36px }
+.flex-direction-nav .flex-prev {background-position: -3px -1px; left: -36px;}
+.flexslider:hover .flex-next {opacity: 0.8; right: 5px;}
+.flexslider:hover .flex-prev {opacity: 0.8; left: 5px;}
+
+.testblock:hover .flex-next {opacity: 0.8; right: 5px;}
+.testblock:hover .flex-prev {opacity: 0.8; left: 5px;}
+
+@media (max-width: 767px) {
+	body{
+		padding-left:0px;
+		padding-right:0px;
+	}
+
+	.paddingcnt{
+		padding:0 20px;
+	}
+
+	.testimonial h1 {
+	padding-bottom: 5px;
+	padding-top:5px;
+	}
+	
+	.testimonial {
+		padding-bottom: 60px;		
+	}
+
+	
+.flex-direction-nav .flex-next {background-position: -56px 0; right: 0px }
+.flex-direction-nav .flex-prev {background-position: -3px -1px; left: 0px;}
+.flexslider:hover .flex-next {opacity: 0.8; right: 0px;}
+.flexslider:hover .flex-prev {opacity: 0.8; left: 5px;}
+
+.testblock:hover .flex-next {opacity: 0.8; right: 0px;}
+.testblock:hover .flex-prev {opacity: 0.8; left: 0px;}
+}	
+
+@media (min-width: 481px) and (max-width: 767px) {
+	.flex-direction-nav a { top: 45%;}	
+}
+
+@media (max-width: 480px) {
+	.flex-direction-nav a { top: 40%;}	
+	
+}

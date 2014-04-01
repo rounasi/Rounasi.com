@@ -1,0 +1,269 @@
+/*-----------------------------------------------------------------------------------*/
+/*	kg_second_chances_sketch
+/*-----------------------------------------------------------------------------------*/
+@font-face {
+    font-family: 'kg_second_chances_sketch';
+    src: url('kgsecondchancessketch-webfont.eot');
+    src: url('kgsecondchancessketch-webfont.eot?#iefix') format('embedded-opentype'),
+         url('kgsecondchancessketch-webfont.woff') format('woff'),
+         url('kgsecondchancessketch-webfont.ttf') format('truetype'),
+         url('kgsecondchancessketch-webfont.svg#kg_second_chances_sketchRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/*-----------------------------------------------------------------------------------*/
+/*	sketch_gothic
+/*-----------------------------------------------------------------------------------*/
+@font-face {
+    font-family: 'sketch_gothic';
+    src: url('freesketch_gothic_light_demo-webfont.eot');
+    src: url('freesketch_gothic_light_demo-webfont.eot?#iefix') format('embedded-opentype'),
+         url('freesketch_gothic_light_demo-webfont.woff') format('woff'),
+         url('freesketch_gothic_light_demo-webfont.ttf') format('truetype'),
+         url('freesketch_gothic_light_demo-webfont.svg#sketch_gothiclight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/*-----------------------------------------------------------------------------------*/
+/*	urban_sketch
+/*-----------------------------------------------------------------------------------*/
+@font-face {
+    font-family: 'urban_sketch';
+    src: url('urban_sketch-webfont.eot');
+    src: url('urban_sketch-webfont.eot?#iefix') format('embedded-opentype'),
+         url('urban_sketch-webfont.woff') format('woff'),
+         url('urban_sketch-webfont.ttf') format('truetype'),
+         url('urban_sketch-webfont.svg#urban_sketchregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/*-----------------------------------------------------------------------------------*/
+/*	sketch_rockwell
+/*-----------------------------------------------------------------------------------*/
+@font-face {
+    font-family: 'sketch_rockwell';
+    src: url('sketchrockwell-bold-webfont.eot');
+    src: url('sketchrockwell-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('sketchrockwell-bold-webfont.woff') format('woff'),
+         url('sketchrockwell-bold-webfont.ttf') format('truetype'),
+         url('sketchrockwell-bold-webfont.svg#sketch_rockwellregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/*-----------------------------------------------------------------------------------*/
+/*	Tiza
+/*-----------------------------------------------------------------------------------*/
+@font-face {
+    font-family: 'tiza';
+    src: url('tiza-webfont.eot');
+    src: url('tiza-webfont.eot?#iefix') format('embedded-opentype'),
+         url('tiza-webfont.woff') format('woff'),
+         url('tiza-webfont.ttf') format('truetype'),
+         url('tiza-webfont.svg#tizaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	League Gothic
+/*-----------------------------------------------------------------------------------*/
+
+@font-face {
+    font-family: 'League Gothic';
+    src: url('leaguegothic-italic-webfont.eot');
+    src: url('leaguegothic-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('leaguegothic-italic-webfont.woff') format('woff'),
+         url('leaguegothic-italic-webfont.ttf') format('truetype'),
+         url('leaguegothic-italic-webfont.svg#league_gothic_italicregular') format('svg');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+/* Italic */
+@font-face {
+    font-family: 'League Gothic';
+    src: url('leaguegothic-regular-webfont.eot');
+    src: url('leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('leaguegothic-regular-webfont.woff') format('woff'),
+         url('leaguegothic-regular-webfont.ttf') format('truetype'),
+         url('leaguegothic-regular-webfont.svg#league_gothicregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Condensed */
+@font-face {
+    font-family: 'League Gothic Condensed';
+    src: url('leaguegothic-condensed-regular-webfont.eot');
+    src: url('leaguegothic-condensed-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('leaguegothic-condensed-regular-webfont.woff') format('woff'),
+         url('leaguegothic-condensed-regular-webfont.ttf') format('truetype'),
+         url('leaguegothic-condensed-regular-webfont.svg#league_gothic_condensed-Rg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Condensed Italic */
+@font-face {
+    font-family: 'League Gothic Condensed';
+    src: url('leaguegothic-condensed-italic-webfont.eot');
+    src: url('leaguegothic-condensed-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('leaguegothic-condensed-italic-webfont.woff') format('woff'),
+         url('leaguegothic-condensed-italic-webfont.ttf') format('truetype'),
+         url('leaguegothic-condensed-italic-webfont.svg#league_gothic_condensed_itaRg') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	Indie Flower
+/*-----------------------------------------------------------------------------------*/
+
+@font-face {
+  font-family: 'Indie Flower';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Indie Flower'), local('IndieFlower'), url(http://themes.googleusercontent.com/static/fonts/indieflower/v4/10JVD_humAd5zP2yrFqw6qRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	Lato
+/*-----------------------------------------------------------------------------------*/
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Lato Hairline'), local('Lato-Hairline'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/Kom15zUm24dIPfIRiNogNuvvDin1pK8aKteLpeZ5c0A.woff) format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Lato Light'), local('Lato-Light'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/kcf5uOXucLcbFOydGU24WALUuEpTyoUstqEm5AMlJo4.woff) format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/qIIYRU-oROkIk8vfvxw6QvesZW2xOQ-xsNqO47m55DA.woff) format('woff');
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	Open Sans 
+/*-----------------------------------------------------------------------------------*/
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/DXI1ORHCpsQm3Vp6mXoaTaRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/cJZKeOuBrn4kERxqtaUH3bO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/MTP_ySUJH_bn48VBG8sNSqRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/k3k702ZOKiLJc3WVjuplzKRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	fontello 
+/*-----------------------------------------------------------------------------------*/
+
+@font-face {
+  font-family: 'fontello';
+  src: url('fontello.eot?22306845');
+  src: url('fontello.eot?22306845#iefix') format('embedded-opentype'),
+       url('fontello.woff?22306845') format('woff'),
+       url('fontello.ttf?22306845') format('truetype'),
+       url('fontello.svg?22306845#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('fontello.svg?22306845#fontello') format('svg');
+  }
+}
+*/
+ 
+ [class^="icon2-"]:before, [class*=" icon2-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+     
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.icon2-android:before { content: '\e817'; } /* '' */
+.icon2-appstore:before { content: '\e818'; } /* '' */
+.icon2-gmail:before { content: '\e800'; } /* '' */
+.icon2-heart-empty:before { content: '\e812'; } /* '' */
+.icon2-heart:before { content: '\e811'; } /* '' */
+.icon2-attention:before { content: '\e80b'; } /* '' */
+.icon2-cog-alt:before { content: '\e809'; } /* '' */
+.icon2-off:before { content: '\e804'; } /* '' */
+.icon2-gauge:before { content: '\e805'; } /* '' */
+.icon2-vcard:before { content: '\e80c'; } /* '' */
+.icon2-login:before { content: '\e802'; } /* '' */
+.icon2-login-1:before { content: '\e803'; } /* '' */
+.icon2-resize-full:before { content: '\e80f'; } /* '' */
+.icon2-resize-full-1:before { content: '\e810'; } /* '' */
+.icon2-resize-full-alt:before { content: '\e80e'; } /* '' */
+.icon2-resize-small-1:before { content: '\e816'; } /* '' */
+.icon2-resize-small:before { content: '\e814'; } /* '' */
+.icon2-resize-small-alt:before { content: '\e815'; } /* '' */
+.icon2-spin2:before { content: '\e806'; } /* '' */
+.icon2-spin5:before { content: '\e807'; } /* '' */
+.icon2-user-male:before { content: '\e801'; } /* '' */
+.icon2-trophy:before { content: '\e813'; } /* '' */
+.icon2-award:before { content: '\e80d'; } /* '' */
+.icon2-users:before { content: '\e80a'; } /* '' */
+.icon2-chart-area:before { content: '\e808'; } /* '' */

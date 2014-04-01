@@ -1,0 +1,114 @@
+.filter-container {
+	background: #232323;
+	position: fixed;
+	width: 200px;
+	top: 0;
+	right: 0;
+	height: 100%;
+	z-index: 10000000000;
+	-webkit-transform: translate(200px, 0);
+	-moz-transform: translate(200px, 0);
+	-ms-transform: translate(200px, 0);
+	-o-transform: translate(200px, 0);
+	transform: translate(200px, 0);
+	-webkit-transition: -webkit-transform 400ms 10ms;
+	-webkit-transition-delay: ease;
+	-moz-transition: -moz-transform 400ms 10ms ease;
+	-o-transition: -o-transform 400ms 10ms ease;
+	transition: transform 400ms 10ms ease;
+	-webkit-transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+	-moz-transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+	-ms-transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+	-o-transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+	transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1)
+}
+.filter-container.active {
+	-webkit-transform: translate(0, 0);
+	-moz-transform: translate(0, 0);
+	-ms-transform: translate(0, 0);
+	-o-transform: translate(0, 0);
+	transform: translate(0, 0)
+}
+@media screen and (min-width: 1850px), screen and (max-width: 767px) {
+.filter-container {
+	z-index: 3;
+	-webkit-transform: translate(0, 0);
+	-moz-transform: translate(0, 0);
+	-ms-transform: translate(0, 0);
+	-o-transform: translate(0, 0);
+	transform: translate(0, 0);
+	-webkit-transition: none;
+	-moz-transition: none;
+	-o-transition: none;
+	transition: none
+}
+}
+.touch .filter-container {
+	z-index: 3;
+	-webkit-transform: translate(0, 0);
+	-moz-transform: translate(0, 0);
+	-ms-transform: translate(0, 0);
+	-o-transform: translate(0, 0);
+	transform: translate(0, 0);
+	-webkit-transition: none;
+	-moz-transition: none;
+	-o-transition: none;
+	transition: none
+}
+.filter-container.away, .touch .filter-container.away {
+	-webkit-transform: translate(200px, 0);
+	-moz-transform: translate(200px, 0);
+	-ms-transform: translate(200px, 0);
+	-o-transform: translate(200px, 0);
+	transform: translate(200px, 0)
+}
+.filter-container li, .filter-container a {
+	display: block
+}
+.filter-container li a {
+	color: #fff;
+	cursor: pointer;
+	padding: 30px;
+	border-top: 1px solid #2d2d2d;
+	opacity: 0.74;
+*zoom:1;
+	-webkit-transition: opacity 300ms ease;
+	-moz-transition: opacity 300ms ease;
+	-o-transition: opacity 300ms ease;
+	transition: opacity 300ms ease
+}
+.filter-container li a:before, .filter-container li a:after {
+	content: " ";
+	display: table
+}
+.filter-container li a:after {
+	clear: both
+}
+@media only screen and (max-width: 767px) {
+.filter-container li a {
+	padding: 22px
+}
+}
+.filter-container li a:hover, .filter-container li a.active {
+	opacity: 1
+}
+.filter-container li a .checkbox {
+	display: block;
+	float: left;
+	margin-right: 20px
+}
+.filter-container li a .text {
+	display: block;
+	float: left;
+	position: relative;
+	margin-top: 3px;
+	font-size: 15px;
+	line-height: 1em;
+	text-transform: uppercase
+}
+.filter-container li:first-child a {
+	border-top: none
+}
+.template-work .filter-container {
+	display: none
+}
